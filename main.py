@@ -50,17 +50,16 @@ def diabetes_prediction():
                     "I know it's super sad to know that you have diabetes but don't worry i am here to help you you "
                     "can try following medicines.")
                 st.markdown("""**Some tips to control diabetes**""")
-                # //randomize from array
-                random_value = get_random_tips()
+            
                 st.markdown("""
                 **Try these medicines it might work and try to reach out to doctors as soon as possible** :):
                 
-                **Food Recommendation:
-                {0}**
-                {1}**
-                **Lifestyle Recommendation:
-                {2}**
-                {3}**
+                Food Recommendations:
+                    {0}
+                    {1}
+                Lifestyle Recommendations:
+                    {2}
+                    {3}
                 
                 """.format(random_value[0], random_value[1], random_value[2], random_value[3]))
             else:
